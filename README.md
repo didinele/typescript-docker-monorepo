@@ -17,7 +17,6 @@
 
   <p>
       <img src="https://github.com/didinele/typescript-docker-monorepo/actions/workflows/quality.yml/badge.svg" alt="Quality Check">
-      <img src="https://github.com/didinele/typescript-docker-monorepo/actions/workflows/docs.yml/badge.svg" alt="Deploy Docs"><br>
       <a href="https://github.com/didinele/typescript-docker-monorepo/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-yellow.svg" alt="License: APACHE 2.0"></a>
       <a href="https://github.com/didinele/typescript-docker-monorepo/issues"><img src="https://img.shields.io/github/issues-raw/didinele/typescript-docker-monorepo.svg?maxAge=25000" alt="Issues"></a>
       <a href="https://github.com/didinele/typescript-docker-monorepo/pulls"><img src="https://img.shields.io/github/issues-pr/didinele/typescript-docker-monorepo.svg?style=flat" alt="GitHub pull requests"></a><br>
