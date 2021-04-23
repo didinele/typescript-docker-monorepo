@@ -27,7 +27,7 @@
 
 `Project` is cut up in the form of multiple packages/libraries:
 
-- [`@project/example`](https://github.com/didinele/typescript-docker-monorepo/tree/main/libs/bitfield) - Foo bar
+- [`@project/example`](https://github.com/didinele/typescript-docker-monorepo/tree/main/libs/example) - Foo bar
 
 # Contributing
 [`pnpm`](https://pnpm.js.org/) is made use of to manage the monorepo setup. It is expected that you have an up-to-date version of it.
