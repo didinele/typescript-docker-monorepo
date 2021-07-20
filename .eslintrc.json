@@ -5,6 +5,7 @@
       "error",
       2
     ],
-    "no-useless-constructor": "off"
+    "no-useless-constructor": "off",
+    "comma-dangle": "off"
   }
 }

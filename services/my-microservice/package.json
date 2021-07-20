@@ -19,11 +19,11 @@
   },
   "homepage": "https://github.com/didinele/typescript-docker-monorepo#readme",
   "devDependencies": {
-    "@types/node": "^14.14.41",
-    "typescript": "^4.2.4"
+    "@types/node": "^14.17.5",
+    "typescript": "^4.3.5"
   },
   "dependencies": {
     "@project/example": "workspace:^0.1.0",
-    "tslib": "^2.2.0"
+    "tslib": "^2.3.0"
   }
 }
