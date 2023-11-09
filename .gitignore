@@ -1,11 +1,14 @@
-/**/dist
-/**/types
-!/**/src/types
+/**/node_modules
+.env
+
 coverage
+/**/dist
+/**/.turbo
 
-node_modules
-
-.vscode
-*.log
-doc
-docs
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*

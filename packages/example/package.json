@@ -1,13 +1,15 @@
 {
 	"$schema": "http://json.schemastore.org/package",
-	"name": "@project/my-microservice",
-	"description": "Some cool micro service",
-	"main": "./dist/index.js",
-	"types": "./types/index.d.ts",
+	"name": "@project/example",
+	"description": "Some cool package",
 	"version": "0.1.0",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
 	"scripts": {
 		"lint": "eslint src --ext .ts",
-		"build": "tsc"
+		"build": "tsc",
+		"test": "vitest run"
 	},
 	"repository": {
 		"type": "git",
@@ -23,7 +25,6 @@
 		"typescript": "^5.2.2"
 	},
 	"dependencies": {
-		"@project/example": "workspace:^0.1.0",
 		"tslib": "^2.6.2"
 	}
 }

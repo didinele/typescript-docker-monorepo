@@ -1,5 +1,10 @@
-**/types
-!**/src/types
 **/dist
 **/node_modules
 **/README.md
+**/LICENSE
+**/README.md
+**/vitest.config.ts
+**/tsconfig.eslint.json
+**/.eslintrc.json
+**/.gitignore
+**/.gitattributes

@@ -1,11 +1,11 @@
 {
-  "extends": "marine/node",
-  "rules": {
-    "@typescript-eslint/indent": [
-      "error",
-      2
-    ],
-    "no-useless-constructor": "off",
-    "comma-dangle": "off"
-  }
+	"root": true,
+	"extends": ["neon/common", "neon/node", "neon/typescript", "neon/prettier", "neon/module"],
+	"parserOptions": {
+		"project": "./tsconfig.eslint.json"
+	},
+	"rules": {
+		"curly": ["error", "all"]
+	},
+	"ignorePatterns": ["**/dist/*"]
 }

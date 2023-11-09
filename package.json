@@ -1,50 +1,40 @@
 {
-  "$schema": "http://json.schemastore.org/package",
-  "name": "project",
-  "version": "0.1.0",
-  "description": "Something cool",
-  "scripts": {
-    "build": "pnpm recursive run build --filter @project/*",
-    "lint": "pnpm recursive run lint --filter @project/*",
-    "lint:ci": "pnpm lint --parallel --filter @project/*",
-    "test": "jest",
-    "test:ci": "jest --ci --no-stack-trace --verbose"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/didinele/typescript-docker-monorepo.git"
-  },
-  "author": "didinele",
-  "bugs": {
-    "url": "https://github.com/didinele/typescript-docker-monorepo/issues"
-  },
-  "homepage": "https://github.com/didinele/typescript-docker-monorepo#readme",
-  "devDependencies": {
-    "@babel/core": "^7.14.6",
-    "@babel/generator": "^7.14.5",
-    "@babel/preset-env": "^7.14.7",
-    "@babel/preset-typescript": "^7.14.5",
-    "@types/jest": "^26.0.24",
-    "@typescript-eslint/eslint-plugin": "^4.28.4",
-    "@typescript-eslint/parser": "^4.28.4",
-    "babel-jest": "^26.6.3",
-    "babel-plugin-const-enum": "^1.1.0",
-    "eslint": "^7.31.0",
-    "eslint-config-marine": "^9.0.6",
-    "husky": "^4.3.8",
-    "jest": "^26.6.3",
-    "lint-staged": "^10.5.4",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.3.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.ts": [
-      "eslint --fix"
-    ]
-  }
+	"name": "project",
+	"description": "Description here",
+	"packageManager": "yarn@4.0.1",
+	"private": true,
+	"version": "0.1.0",
+	"workspaces": [
+		"packages/*",
+		"services/**"
+	],
+	"author": {
+		"name": "DD",
+		"email": "didinele.dev@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/didinele/typescript-docker-monorepo.git"
+	},
+	"bugs": {
+		"url": "https://github.com/didinele/typescript-docker-monorepo/issues"
+	},
+	"homepage": "https://github.com/didinele/typescript-docker-monorepo",
+	"scripts": {
+		"lint": "turbo run lint && prettier --check .",
+		"test": "turbo run test",
+		"build": "turbo run build",
+		"format": "prettier --write .",
+		"update": "yarn upgrade-interactive"
+	},
+	"devDependencies": {
+		"@vitest/coverage-v8": "^0.34.6",
+		"eslint": "^8.53.0",
+		"eslint-config-neon": "^0.1.57",
+		"prettier": "^3.0.3",
+		"prettier-eslint": "^16.1.2",
+		"turbo": "1.10.16",
+		"typescript": "^5.2.2",
+		"vitest": "^0.34.6"
+	}
 }

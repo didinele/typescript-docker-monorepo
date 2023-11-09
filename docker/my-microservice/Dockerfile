@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:20-alpine
 LABEL name "project my-microservice builder"
 
 WORKDIR /opt/build
@@ -7,21 +7,13 @@ RUN apk add --update \
 && apk add --no-cache ca-certificates \
 && apk add --no-cache --virtual .build-deps curl git python3 alpine-sdk
 
-RUN curl -L https://unpkg.com/@pnpm/self-installer | node
+COPY . .
 
-COPY package.json pnpm-lock.yaml pnpm-workspace.yaml tsconfig.json ./
+RUN yarn --immutable
 
-COPY libs/example/package.json ./libs/example/
-COPY services/my-microservice/package.json ./services/my-microservice/package.json
+RUN yarn run build && yarn workspaces focus --production
 
-RUN pnpm i --frozen-lockfile && apk del .build-deps
-
-COPY libs/example ./libs/example
-COPY services/my-microservice ./services/my-microservice
-
-RUN pnpm run build && pnpm prune --prod
-
-FROM node:16-alpine
+FROM node:20-alpine
 LABEL name "project my-microservice"
 LABEL version "0.1.0"
 
