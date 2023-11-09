@@ -22,7 +22,8 @@
 	"homepage": "https://github.com/didinele/typescript-docker-monorepo#readme",
 	"devDependencies": {
 		"@types/node": "^20.9.0",
-		"typescript": "^5.2.2"
+		"typescript": "^5.2.2",
+		"vitest": "^0.34.6"
 	},
 	"dependencies": {
 		"tslib": "^2.6.2"
