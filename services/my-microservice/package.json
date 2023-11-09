@@ -2,8 +2,8 @@
 	"$schema": "http://json.schemastore.org/package",
 	"name": "@project/my-microservice",
 	"description": "Some cool micro service",
+	"type": "module",
 	"main": "./dist/index.js",
-	"types": "./types/index.d.ts",
 	"version": "0.1.0",
 	"scripts": {
 		"lint": "eslint src --ext .ts",
