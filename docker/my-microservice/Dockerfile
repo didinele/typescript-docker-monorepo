@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM node:22-alpine
 LABEL name "project my-microservice builder"
 
 WORKDIR /opt/build
@@ -13,7 +13,7 @@ RUN yarn --immutable
 
 RUN yarn run build && yarn workspaces focus --production
 
-FROM node:20-alpine
+FROM node:22-alpine
 LABEL name "project my-microservice"
 LABEL version "0.1.0"
 

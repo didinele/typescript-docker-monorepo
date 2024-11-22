@@ -1,16 +1,7 @@
 <div align="center">
   <h3>
-    Neato <a href="https://nodejs.org/">Node.js</a> TS repo template for dockerized applications
+    <a href="https://nodejs.org/">Node.js</a> TS repo template for dockerized applications
   </h3>
-
-  <p align="center">
-    <br />
-    <h3>
-      <strong>
-        <a href="https://example.com/">Something here</a>
-      </strong>
-    </h2>
-  </p>
 
   <p>
       <img src="https://github.com/didinele/typescript-docker-monorepo/actions/workflows/quality.yml/badge.svg" alt="Quality Check">
